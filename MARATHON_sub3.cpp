@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+ #include <bits/stdc++.h>
 using namespace std;
 // @author: MavrosOplarxigos
 
@@ -24,13 +24,17 @@ int main() {
     for(int i=0;i<q;i++){
         ll m;
         cin >> m;
+        bool found = 0;
         for(int i=0;i<n;i++){
             if(t[i] >= m){
                 cout << i+1 << endl;
-                continue;
+                found = 1;
+                break;
             }
         }
-        cout << -1 << endl;
+        if(!found){
+            cout << -1 << endl;
+        }
     }
 
 }
