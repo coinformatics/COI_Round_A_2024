@@ -9,13 +9,10 @@ int main() {
 
     ll n,m;
     cin >> n >> m;
-    assert(n<=100);
-    assert(m>=0 && m<=1);
 
     ll a[n];
     for(ll i=0;i<n;i++){
     	cin >> a[i];
-	assert( a[i] >= 1 && a[i] <= n);
     }
 
     ll best = 0;
